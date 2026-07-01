@@ -15,7 +15,7 @@ Distributed system helps to solve a complex problem by delegating different task
 1. Provides more scaling options (horizontal scaling)
 2. Increase fault tolerance.
 
-**Common system components:**
+### Common system components
 
 - **Client.**. Makes requests and display information to final users.
 - **Database.**. Stores information.
@@ -27,7 +27,7 @@ Distributed system helps to solve a complex problem by delegating different task
 
 ## Gathering Requirements
 
-**Core elements of system design:**
+### Core elements of system design
 
 - Translate business requirements.
 - Design API and architecture.
@@ -40,7 +40,7 @@ We can classify requirements into two different ones:
 1. **Functional requirements.** Describes what the system should do (e.g. Users should be able to change their password).
 2. **Non-functional requirements.** Describes how the system should perform (e.g. The site should be accessible by screen readers).
 
-**What is the CAP Theorem?**
+### What is the CAP Theorem?
 
 The CAP Theorem core concept is based on three characteristics of the system:
 
@@ -54,20 +54,20 @@ The golden rule is that any distributed system can have only two of the three ch
 - **Consistency + Partition tolerance:** It always show the latest data, but with an unreliable performance.
 - **Availability + Partition tolerance:** It always responds, but data could shown can be outdated.
 
-**Quality indicators of your system**
+### Quality indicators of your system
 
 - **Reliability.** System works as expected over time.
 - **Observability.** Ability to know what is happening in your system.
 - **Scalability.** How your system scales up and down.
   - **Vertical scaling**: Increasing hardware capabilities. It's easier than horizontal scaling but it has some limitations, like phisical walls.
-  - **Horizontal scaling**: Increasing the amount of computers in your system. It does not have phisical limitations as vertical scaling, but increases the system's complexity. To get the results we expect, we need to orchestrate machines to cooperate. **Load balancers** are an important piece when scaling horizontally, as they are design to distribute traffic across multiple servers.
+  - **Horizontal scaling**: Increasing the amount of computers in your system. It does not have phisical limitations as vertical scaling, but increases the system's complexity. To get the results we expect, we need to orchestrate machines to cooperate. **Load balancers** are an important piece when scaling horizontally, as they are design to distribute traffic across multiple server.
 - **Security.** Ability to safeguard your system and its data.
 - **Availability:** Ability to handle changing requirements on your system.
 - **Performance.**
   - Latency: How quick your system responds (usually a good measure is how long it takes to get the response for a request).
   - Throughput: Amount of data that your system can move at a given time. Requests Per Second (RPS) is a an example of a throughput measurement.
 
-**Modelling ordering**
+### Modelling ordering
 
 1. Gather requirements (functional and not-functional)
 2. Entity modelling.
